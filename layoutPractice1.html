@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Example</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Set the height of each column to 100% of the body's height */
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .block {
+        height: 100%;
+        flex: 1;
+      }
+
+      .block1 {
+        background-color: red;
+        flex: 1;
+        width: 60%;
+        height: 100%; /* Set the height of block1 to 100% */
+      }
+
+      .block2 {
+        background-color: yellow;
+        flex: 4;
+        width: 30%;
+      }
+
+      .block3 {
+        background-color: green;
+        flex: 3;
+        width: 30%;
+      }
+
+      .block4 {
+        background-color: teal;
+        flex: 1;
+        width: 60%;
+        height: 100%;
+      }
+
+      .block5 {
+        background-color: blue;
+        flex: 4;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block4"></div>
+    <div class="block block5"></div>
+  </body>
+</html>
